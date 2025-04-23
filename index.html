@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Blog</title>
+  <style>
+    body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+    #blog-list ul { list-style: none; padding: 0; }
+    #blog-list li { margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; cursor: pointer; }
+    #blog-list li:hover { background-color: #f0f0f0; }
+    #blog-detail { border: 1px solid #ddd; padding: 15px; margin-top: 20px; }
+    #blog-detail h2 { margin-top: 0; }
+    #blog-detail p { margin-bottom: 10px; }
+    .back-button { margin-top: 15px; padding: 8px 15px; cursor: pointer; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+<h1>My Simple Blog</h1>
+
+<div id="blog-list-container">
+  <h2>Blog Posts</h2>
+  <ul id="blog-list">
+    <li>Loading posts...</li>
+  </ul>
+  <p id="list-error" class="hidden" style="color: red;"></p>
+</div>
+
+<div id="blog-detail-container" class="hidden">
+  <div id="blog-detail">
+  </div>
+  <p id="detail-error" class="hidden" style="color: red;"></p>
+  <button id="back-button" class="back-button">← Back to List</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
